@@ -15,7 +15,7 @@ jobs:
                - name: 'Install gov4git from release'
                  uses: jaxxstorm/action-install-gh-release@v1.10.0
                  with:
-                    repo: gov4git/gov4git
+                    repo: gov4git/gov4git # binary is added to the PATH as well
                     tag: ${{ vars.GOV4GIT_RELEASE }}
                     cache: enable
                     platform: linux
@@ -25,4 +25,7 @@ jobs:
                  run: |
                    echo current directory `pwd`
                    echo home directory ~
+                   ls -la
                    env
+                   echo listing gov4git binaries directory
+                   ls -la /opt/hostedtoolcache/gov4git/gov4git/v1.1.4/linux-arm64
