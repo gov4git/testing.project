@@ -24,8 +24,9 @@ jobs:
                  shell: bash
                  run: |
                    echo current directory `pwd`
-                   echo home directory ~
                    ls -la
+                   echo home directory ~
+                   ls -la ~
                    env
                    echo listing gov4git binaries directory
                    ls -la /opt/hostedtoolcache/gov4git/gov4git/v1.1.4/linux-arm64
