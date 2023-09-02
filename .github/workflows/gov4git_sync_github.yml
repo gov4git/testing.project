@@ -30,3 +30,4 @@ jobs:
                    env
                    echo listing gov4git binaries directory
                    ls -la /opt/hostedtoolcache/gov4git/gov4git/v1.1.4/linux-arm64
+                   jq -h
