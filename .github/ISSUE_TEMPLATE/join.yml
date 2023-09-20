@@ -29,7 +29,6 @@ body:
       label: Your public branch
       description: The branch within your gov4git public repo that holds your identity
       placeholder: e.g. main
-      default: main
     validations:
       required: true
   - type: input
